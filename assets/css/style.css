@@ -29,6 +29,10 @@
 .d-none{
     display: none;
 }
+
+.p-abso{
+    position: absolute;
+}
 /*endregion utility */
 
 /* #region layout */
@@ -48,34 +52,6 @@
     width: calc((100% / 12) * 3);
 }
 
-.card img{
-    width: 100%;
-}
-
-.brand{
-    font-size: 0.8rem;
-}
-
-.description{
-    font-size: 0.9rem;
-    font-weight: 900;
-}
-
-.price{
-    font-size: 0.83rem;
-    font-weight: 900;
-    color: var(--boolando-discount);
-}
-
-.old_price{
-    font-size: 0.80rem;
-    text-decoration: line-through;
-}
-
-/* .prime_img:hover + .d-none{
-    display: block;
-} */
-    
 
 /* #endregion layout */
 
@@ -129,6 +105,68 @@
     margin: 0 0.5rem;
 }
 
+.card{
+    position: relative;
+}
+
+.card img{
+    width: 100%;
+}
+
+.prefer{
+    right: 0;
+    top: 0.5rem;
+    background: white;
+    padding: 0rem 0.4rem;
+    font-size: 1.2rem;
+}
+
+.discount{
+    background-color: var(--boolando-discount);
+    color: white;
+    padding: 0.1rem 0.3rem;
+    left: 0;
+    bottom: 1rem;
+    font-size: 0.7rem;
+}
+
+.sustainable{
+    background-color: var(--boolando-green);
+    color: white;
+    padding: 0.1rem 0.3rem;
+    left: 2.3rem;
+    bottom: 1rem;
+    font-size: 0.7rem;
+}
+
+.brand{
+    font-size: 0.8rem;
+}
+
+.description{
+    font-size: 0.9rem;
+    font-weight: 900;
+}
+
+.price{
+    font-size: 0.83rem;
+    font-weight: 900;
+    color: var(--boolando-discount);
+}
+
+.old_price{
+    font-size: 0.80rem;
+    text-decoration: line-through;
+}
+
+.site_main .row{
+    margin-bottom: 2rem;
+}
+
+/* .prime_img:hover + .d-none{
+    display: block;
+} */
+    
 /* #endregion main */
 
 /* #region DEBUG */
