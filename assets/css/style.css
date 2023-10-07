@@ -1,0 +1,86 @@
+/* #region common */
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+:root{
+    --boolando-orange: #ff6900;
+    --boolando-discount: #ff0000;
+    --boolando-green: #008000;
+    --boolando-black: #1a1a1a;
+}
+/* #endregion common */
+
+/*#region utility */
+.format_tx{
+    list-style: none;
+    & a{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.d-flex{
+    display: flex;
+}
+/*endregion utility */
+
+/* #region layout */
+.container{
+	width: 80%;
+	max-width: 1152px;
+	margin: auto
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -1rem
+}
+/* #endregion layout */
+
+
+
+
+/* #region header */
+.site_header{
+    height: 3.5rem;
+    background-color: var(--boolando-orange);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.site_header .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sizes{
+    gap: 0.7rem;
+    flex-grow: 1;
+}
+
+.logo{
+    display: flex;
+    height: 2rem;
+    flex-grow: 2;
+}
+
+.nav_icons{
+    flex-grow: 1;
+    color: white;
+}
+
+.nav_icons i{
+    margin: 0 0.2rem;
+}
+
+/* #endregion header */
+
+
+/* #region main */
+/* #endregion main */
