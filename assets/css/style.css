@@ -13,7 +13,7 @@
 }
 /* #endregion common */
 
-/*#region utility */
+/* #region utility */
 .format_tx{
     list-style: none;
     & a{
@@ -33,7 +33,7 @@
 .p-abso{
     position: absolute;
 }
-/*endregion utility */
+/* #endregion utility */
 
 /* #region layout */
 .container{
@@ -48,15 +48,12 @@
 	margin: 0 -1rem
 }
 
-.col-3{
-    width: calc((100% / 12) * 3);
+.col-4{
+    width: calc((100% / 12) * 4 - 1rem);
 }
 
 
 /* #endregion layout */
-
-
-
 
 /* #region header */
 .site_header{
@@ -69,24 +66,22 @@
 
 .site_header .container{
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-between;
 }
 
 .sizes{
-    gap: 0.7rem;
-    flex-grow: 1;
+    gap: 0.5rem;
 }
 
 .logo{
     display: flex;
     height: 2rem;
-    flex-grow: 2;
 }
 
 .nav_icons{
-    flex-grow: 1;
     color: white;
+    text-align: right;
 }
 
 .nav_icons i{
@@ -95,13 +90,12 @@
 
 /* #endregion header */
 
-
 /* #region main */
 .site_main .container{
     padding-top: 5rem;
 }
 
-.site_main .col-3{
+.site_main .col-4{
     margin: 0 0.5rem;
 }
 
@@ -169,10 +163,20 @@
     
 /* #endregion main */
 
-/* #region DEBUG */
-.debug .card{
-    background: red;
-    height: 20rem;
-    border: solid 1px black;
+/* #region footer */
+.footer_site{
+    background: var(--boolando-black);
+    color: white;
+    padding: 1rem;
 }
-/* #endregion DEBUG */
+
+.footer_site .row{
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.footer_site .row a{
+    margin: 0 0.5rem 0 0;
+    font-size: 0.8rem;
+}
+/* #endregion footer */
