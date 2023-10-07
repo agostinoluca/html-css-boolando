@@ -25,6 +25,10 @@
 .d-flex{
     display: flex;
 }
+
+.d-none{
+    display: none;
+}
 /*endregion utility */
 
 /* #region layout */
@@ -39,6 +43,40 @@
 	flex-wrap: wrap;
 	margin: 0 -1rem
 }
+
+.col-3{
+    width: calc((100% / 12) * 3);
+}
+
+.card img{
+    width: 100%;
+}
+
+.brand{
+    font-size: 0.8rem;
+}
+
+.description{
+    font-size: 0.9rem;
+    font-weight: 900;
+}
+
+.price{
+    font-size: 0.83rem;
+    font-weight: 900;
+    color: var(--boolando-discount);
+}
+
+.old_price{
+    font-size: 0.80rem;
+    text-decoration: line-through;
+}
+
+/* .prime_img:hover + .d-none{
+    display: block;
+} */
+    
+
 /* #endregion layout */
 
 
@@ -83,4 +121,20 @@
 
 
 /* #region main */
+.site_main .container{
+    padding-top: 5rem;
+}
+
+.site_main .col-3{
+    margin: 0 0.5rem;
+}
+
 /* #endregion main */
+
+/* #region DEBUG */
+.debug .card{
+    background: red;
+    height: 20rem;
+    border: solid 1px black;
+}
+/* #endregion DEBUG */
