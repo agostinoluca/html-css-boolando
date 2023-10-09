@@ -52,6 +52,10 @@
     width: calc((100% / 12) * 4 - 1rem);
 }
 
+.col-6{
+    width: calc((100% / 12) * 6);
+}
+
 
 /* #endregion layout */
 
@@ -169,13 +173,11 @@
     padding: 1rem;
 }
 
-.footer_site .row{
-    justify-content: space-between;
-    margin-bottom: 0.5rem;
+footer li{
+    margin-right: 0.7rem;
 }
 
-.footer_site .row a{
-    margin: 0 0.5rem 0 0;
-    font-size: 0.8rem;
+.footer_site h4, .footer_icons{
+text-align: right;
 }
 /* #endregion footer */
