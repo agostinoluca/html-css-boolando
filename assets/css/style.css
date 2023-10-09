@@ -157,10 +157,9 @@
     margin-bottom: 2rem;
 }
 
-/* .prime_img:hover + .d-none{
-    display: block;
-} */
-    
+.card:hover .d-none{
+    display:block;
+}  
 /* #endregion main */
 
 /* #region footer */
