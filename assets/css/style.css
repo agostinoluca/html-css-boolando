@@ -111,6 +111,16 @@
     width: 100%;
 }
 
+.card:hover .d-none{
+    display:block;
+}  
+
+.d-none{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .prefer{
     right: 0;
     top: 0.5rem;
@@ -119,22 +129,29 @@
     font-size: 1.2rem;
 }
 
+.card:hover .prefer{
+    color: red;
+}
+
+.site_main .card .details{
+    bottom: 1.5rem;
+    left: 0;
+}
+
 .discount{
     background-color: var(--boolando-discount);
     color: white;
     padding: 0.1rem 0.3rem;
-    left: 0;
-    bottom: 1rem;
     font-size: 0.7rem;
+    display: inline-block;
 }
 
 .sustainable{
     background-color: var(--boolando-green);
     color: white;
     padding: 0.1rem 0.3rem;
-    left: 2.3rem;
-    bottom: 1rem;
     font-size: 0.7rem;
+    display: inline-block;
 }
 
 .brand{
@@ -160,10 +177,6 @@
 .site_main .row{
     margin-bottom: 2rem;
 }
-
-.card:hover .d-none{
-    display:block;
-}  
 /* #endregion main */
 
 /* #region footer */
